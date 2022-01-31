@@ -67,3 +67,10 @@ jobs:
         name: mac-assets
         if: runner.os == 'macOS'
         path: /Users/runner/work/plugin-ci-example/plugin-ci-example/build/SimplePlugin_artefacts
+        
+    - name: Upload Windows Artifact GitHub Action
+      uses: actions/upload-artifact@v2
+      with:
+        name: mac-assets
+        if: runner.os == 'Windows'
+        path: D:/a/plugin-ci-example/plugin-ci-example/build/SimplePlugin_artefacts
