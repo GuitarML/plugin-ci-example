@@ -5,6 +5,8 @@
 
 [![License](https://img.shields.io/badge/License-BSD-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
 
+Testing CI with new commit
+
 This repository contains a simple audio plugin with examples
 for how to use various Continuous Integration services.
 
