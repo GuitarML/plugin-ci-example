@@ -74,6 +74,10 @@ jobs:
 
       # run tests
       - run: ./build/SimplePlugin --unit-tests --all
+      - store_artifacts:
+          path: C:\Users\circleci\project\build\SimplePlugin_artefacts\Release\Standalone\SimplePlugin.exe
+      - store_artifacts:
+          path: C:\Users\circleci\project\build\SimplePlugin_artefacts\Release\VST3\SimplePlugin.vst3
 
 workflows:
   build-workflow:
