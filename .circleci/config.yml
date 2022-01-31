@@ -71,7 +71,7 @@ jobs:
       # run tests
       - run: ./build/SimplePlugin --unit-tests --all
       - store_artifacts:
-          path: C:\Users\circleci\project\build\SimplePlugin_artefacts
+          path: C:\Users\circleci\project\build\SimplePlugin_artefacts\Release
 
 workflows:
   build-workflow:
