@@ -58,4 +58,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with: 
         name: assets-for-download
+        if: runner.os == 'Linux'
         path: /home/runner/work/plugin-ci-example/plugin-ci-example/build/SimplePlugin
