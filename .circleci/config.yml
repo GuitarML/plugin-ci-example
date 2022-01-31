@@ -28,8 +28,7 @@ jobs:
       - run: ./build/SimplePlugin --unit-tests --all
       
       - store_artifacts:
-        path: /build/SimplePlugin
-
+          path: /build/SimplePlugin
 
   build-macos:
     macos:
