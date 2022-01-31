@@ -30,6 +30,7 @@ jobs:
       - store_artifacts:
           path: /home/circleci/project/build/SimplePlugin_artefacts/Standalone/SimplePlugin
           path: /home/circleci/project/build/SimplePlugin_artefacts/VST3/SimplePlugin.vst3
+          path: /home/circleci/project/build/SimplePlugin_artefacts/LV2/SimplePlugin.lv2
 
   build-macos:
     macos:
