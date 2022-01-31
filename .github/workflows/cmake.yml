@@ -54,22 +54,22 @@ jobs:
     - name: Test
       run: ./build/SimplePlugin --unit-tests --all
 
-      if: runner.os == 'Linux'
     - name: Upload Linux Artifact GitHub Action
+      if: runner.os == 'Linux'
       uses: actions/upload-artifact@v2
       with: 
         name: linux-assets
         path: /home/runner/work/plugin-ci-example/plugin-ci-example/build/SimplePlugin
         
-      if: runner.os == 'macOS'
     - name: Upload Mac Artifact GitHub Action
+      if: runner.os == 'macOS'
       uses: actions/upload-artifact@v2
       with:
         name: mac-assets
         path: /Users/runner/work/plugin-ci-example/plugin-ci-example/build/SimplePlugin_artefacts
-
-      if: runner.os == 'Windows'
+        
     - name: Upload Windows Artifact GitHub Action
+      if: runner.os == 'Windows'
       uses: actions/upload-artifact@v2
       with:
         name: win-assets
