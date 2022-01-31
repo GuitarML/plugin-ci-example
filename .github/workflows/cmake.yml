@@ -59,7 +59,7 @@ jobs:
       uses: actions/upload-artifact@v2
       with: 
         name: linux-assets
-        path: /home/runner/work/plugin-ci-example/plugin-ci-example/build/SimplePlugin
+        path: /home/runner/work/plugin-ci-example/plugin-ci-example/build/SimplePlugin_artefacts
         
     - name: Upload Mac Artifact GitHub Action
       if: runner.os == 'macOS'
