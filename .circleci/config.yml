@@ -28,11 +28,7 @@ jobs:
       - run: ./build/SimplePlugin --unit-tests --all
       
       - store_artifacts:
-          path: /home/circleci/project/build/SimplePlugin_artefacts/Standalone/SimplePlugin
-      - store_artifacts:
-          path: /home/circleci/project/build/SimplePlugin_artefacts/VST3/SimplePlugin.vst3
-      - store_artifacts:
-          path: /home/circleci/project/build/SimplePlugin_artefacts/LV2/SimplePlugin.lv2
+          path: /home/circleci/project/build/SimplePlugin_artefacts
 
   build-macos:
     macos:
@@ -75,9 +71,7 @@ jobs:
       # run tests
       - run: ./build/SimplePlugin --unit-tests --all
       - store_artifacts:
-          path: C:\Users\circleci\project\build\SimplePlugin_artefacts\Release\Standalone\SimplePlugin.exe
-      - store_artifacts:
-          path: C:\Users\circleci\project\build\SimplePlugin_artefacts\Release\VST3\SimplePlugin.vst3
+          path: C:\Users\circleci\project\build\SimplePlugin_artefacts
 
 workflows:
   build-workflow:
