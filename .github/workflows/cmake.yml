@@ -54,9 +54,16 @@ jobs:
     - name: Test
       run: ./build/SimplePlugin --unit-tests --all
 
-    - name: Upload Artifact GitHub Action
+    - name: Upload Linux Artifact GitHub Action
       uses: actions/upload-artifact@v2
       with: 
-        name: assets-for-download
+        name: linux-assets
         if: runner.os == 'Linux'
         path: /home/runner/work/plugin-ci-example/plugin-ci-example/build/SimplePlugin
+        
+    - name: Upload Mac Artifact GitHub Action
+      uses: actions/upload-artifact@v2
+      with:
+        name: mac-assets
+        if: runner.os == 'macOS'
+        path: /Users/runner/work/plugin-ci-example/plugin-ci-example/build/SimplePlugin_artefacts
